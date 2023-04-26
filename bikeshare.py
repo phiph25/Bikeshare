@@ -9,7 +9,6 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
-
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -19,7 +18,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('ENTER THE CITY (chicago, new york city, washington): ').lower()
     while city not in ['chicago', 'new york city', 'washington']:
-        city = input ("Sorry, I didn't catch that. Try again.\nCHOOSE BETWEEN chicago, new york city OR washington: ").lower()
+        city = input ("Sorry, I didn't catch that. Try again.\nENTER CITY: chicago, new york city OR washington: ").lower()
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('ENTER MONTH (all, january, february, ... , june): ').lower()
@@ -82,6 +81,7 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
+    print(df['day_of_week'])
     #print(df)
     # TO DO: display the most common month
     # print("The most common month is: ", df['month'].value_counts().idxmax())
