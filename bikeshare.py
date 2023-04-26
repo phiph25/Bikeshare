@@ -189,7 +189,7 @@ def raw_data(df):
             end_row += 5
         else:
             break
-
+# This is the main method
 def main():
     while True:
         city, month, day = get_filters()
