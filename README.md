@@ -9,6 +9,9 @@ In this project, you will make use of Python to explore data related to bike sha
 
 Files used
 Data(chicago.csv,new_york_city.csv,washington.csv) download from resource Udacity
+<<<<<<< HEAD
 
+=======
+>>>>>>> documentation
 
 Credits
